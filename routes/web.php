@@ -11,4 +11,5 @@
 |
 */
 
+Route::get('/evento/{id}', 'EventosController@read');
 Route::get('/', 'EventosController@index');

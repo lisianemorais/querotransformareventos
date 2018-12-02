@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,18 +17,18 @@
             @show
         </title>
         <!--global css starts-->
-        {{--<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/fonts.css') }}">--}}
-        {{--<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">--}}
-        {{--<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">--}}
-        {{--<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/frontend/custom.css') }}">--}}
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.css') }}">
         <!--end of global css-->
-        <!--page level css-->
-    @yield('header_styles')
-    <!--end of page level css-->
+        @yield('header_styles')
     </head>
     <body>
-    @yield('content')
 
+        @yield('content')
 
+    <!--global js starts-->
+    <script src="{{ asset('js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
     </body>
 </html>

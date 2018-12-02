@@ -25,8 +25,8 @@ class CreateEventos extends Migration
             $table->dateTime('data');
             $table->dateTime('data_final')->nullable();
             $table->string('url_landing_page')->nullable();
-            $table->dateTime('dt_primeira_apresentacao');
-            $table->dateTime('dt_ultima_apresentacao');
+            $table->dateTime('dt_primeira_apresentacao')->nullable();
+            $table->dateTime('dt_ultima_apresentacao')->nullable();
             $table->string('imagem_wide')->nullable();
             $table->string('imagem_box')->nullable();
             $table->string('imagem_mobile')->nullable();
@@ -52,6 +52,7 @@ class CreateEventos extends Migration
             $table->integer('ingresso_inicial')->nullable();
             $table->integer('repeticao_id')->nullable();
             $table->string('url_portal')->nullable();
+            $table->double('valor_ingresso')->nullable();
 
         });
     }

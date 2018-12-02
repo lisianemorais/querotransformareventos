@@ -53,6 +53,7 @@ class EventosModel extends Model
         'ingresso_inicial',
         'repeticao_id',
         'url_portal',
+        'valor_ingresso'
     ];
 
 }

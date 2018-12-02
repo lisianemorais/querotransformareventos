@@ -19,4 +19,10 @@ class EventosController extends Controller
         $eventos = EventosModel::all();
         return View('index', compact('eventos'));
     }
+
+    public function read( Request $request, $id )
+    {
+        $evento = EventosModel::find($id);
+        return View('evento', compact('evento'));
+    }
 }

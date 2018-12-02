@@ -1,0 +1,250 @@
+.conteudo {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.titulo-index {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+h3 hr {
+    width: 26px;
+    height: 4px;
+    background-color: #d63785;
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-eventos {
+    padding: 50px;
+    /*background-color: #676060;*/
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d63785;
+}
+
+/**Card de eventos*/
+.card-evento{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 12px 4px 20px rgba(0,0,0,0.1);
+    background: #fff;
+    display: inline-block;
+    min-height: 305px;
+    vertical-align: top;
+    position: relative;
+    margin: 30px 13px 30px 14px;
+    max-width: 330px;
+}
+
+/**imagem do card de eventos*/
+.card-img-evento{
+    width: 100%;
+    min-height: 160px;
+}
+
+/**Datas dos cards de eventos*/
+.card-data {
+    width: 66px;
+    height: 100px;
+    margin: 20px 15px 0px 15px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+    display: table-cell;
+}
+
+
+.data-double {
+    width: 100%;
+    display: table;
+    position: relative;
+    height: 50px;
+}
+
+.data-double:before {
+    content: '';
+    height: 27px;
+    width: 1px;
+    background: #b3b3b3;
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+}
+.data-double div {
+    width: 50%;
+    display: table-cell;
+}
+
+.data-inicial {
+    width: 50%;
+    display: table-cell !important;
+    text-align: center;
+}
+.data-final {
+    width: 50%;
+    display: table-cell !important;
+    text-align: center;
+}
+.data-semana {
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3c3937;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.data-layer{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d63785;
+    display: table-cell;
+    height: 32px;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.data-mes{
+    height: 16px;
+    font-size: 9.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0px 0;
+    background: #d63785;
+    width: 100%;
+    display: table;
+    line-height: 16px;
+    font-weight: 600;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+}
+
+/*** Mes double  */
+ .double span {
+    width: calc(50% - 0.5px);
+    display: table-cell !important;
+    text-align: center;
+    line-height: normal;
+    vertical-align: middle;
+    position: relative;
+}
+
+.double:before {
+    width: 1px;
+    position: absolute;
+    content: '';
+    height: 10px;
+    background: #FFF;
+    vertical-align: middle;
+    left: calc(50% + 0px);
+    top: 3px
+}
+
+ .data-layer-unica {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #d63785;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin: 4px 0;
+}
+
+ .data-semana-unica {
+     min-width: 66px;
+     width: 100%;
+     height: 18px;
+     font-size: 9px;
+     text-align: center;
+     vertical-align: middle;
+     color: #3c3937;
+     text-transform: uppercase;
+     display: table-cell;
+     font-weight: 600;
+ }
+/**Fim Datas dos cards*/
+
+
+/**Info do card de eventos*/
+.card-info {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.info-evento {
+    display: block;
+    overflow: hidden;
+}
+
+.info-evento .evento-cidade {
+    width: 100%;
+    float: left;
+    height: auto;
+    font-size: 12.2px;
+    font-weight: 300;
+    text-align: left;
+    display: block;
+    color: #d63785;
+}
+
+.info-evento .evento-nome {
+    width: 175px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #3c3937;
+    overflow: hidden;
+    height: 36px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.local-evento {
+    width: 165px;
+    font-size: 13px;
+    overflow: hidden;
+    color: #9C9C9C;
+    height: 36px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.valor-evento {
+    width: 140px;
+    margin-top: 2px;
+    height: auto;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 600;
+    text-align: left;
+    color: #d63785;
+    display: block;
+    float: left;
+}
+/**Fim dos cards*/
+
+/**Css descricao evento*/
+.evento-descricao{
+    
+}
