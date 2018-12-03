@@ -24,11 +24,19 @@
         @yield('header_styles')
     </head>
     <body>
-
+        <header class="header-eventos">
+            <div class="limite-header">
+                <h2 class="titulo-quero-tranformar"> Quero Transformar Eventos</h2>
+            </div>
+        </header>
         @yield('content')
-
-    <!--global js starts-->
-    <script src="{{ asset('js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
+        <div class="footer">
+            <div>
+                <span>© 2018 - Quero Tranformar Eventos</span>
+            </div>
+        </div>
+        <!--global js starts-->
+        <script src="{{ asset('js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
     </body>
 </html>

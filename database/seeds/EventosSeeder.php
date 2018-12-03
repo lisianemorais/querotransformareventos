@@ -57,7 +57,16 @@ class EventosSeeder extends Seeder
             [
                 "evento_id"=>1943,
                 "evento_nome"=>"Um Natal pelo mundo",
-                'descricao' => 'teste descricao',
+                'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+
+<p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si u mundo t&aacute; muito paradis? Toma um m&eacute; que o mundo vai girarzis! Copo furadis &eacute; disculpa de bebadis, arcu quam euismod magna. T&aacute; deprimidis, eu conhe&ccedil;o uma cachacis que pode alegrar sua vidis.</p>
+
+<p>Viva Forevis aptent taciti sociosqu ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Cevadis im ampola pa arma uma pindureta. Per aumento de cachacis, eu reclamis.</p>
+
+<p>Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. M&eacute; faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga.</p>
+
+<address>&nbsp;</address>
+',
                 "seats_key"=>"",
                 "seats_public_key"=>"c0ab1473-c4d0-4b1e-82ac-8da9cc0de7e5",
                 "categoria_id"=>11,
@@ -67,7 +76,7 @@ class EventosSeeder extends Seeder
                 "url_landing_page"=>null,
                 "dt_primeira_apresentacao"=>"2019-02-07 23:30:30",
                 "dt_ultima_apresentacao"=>"2019-12-07 23:30:30",
-                "imagem_wide"=>"https://eventicket.s3-sa-east-1.amazonaws.com/imgs/3894-aoa-give-me-the-love-japan-versionlimited-edition-type-c.jpg" ,
+                "imagem_wide"=>"https://eventicket.s3-sa-east-1.amazonaws.com/imgs/4012-layer-12.jpg" ,
                 "imagem_box"=>"https://imagens.uhuu.com/imgs/9611-untitled-1.jpg",
                 "imagem_mobile"=>null,
                 "imagem_totem"=>"https://eventicket.s3-sa-east-1.amazonaws.com/imgs/4022-1537316482234remmina-2018-9-19-02250158275.png",
@@ -98,7 +107,16 @@ class EventosSeeder extends Seeder
             [
                 "evento_id"=>1973,
                 "evento_nome"=>"Grande Desfile de Natal",
-                'descricao' => 'teste descricao',
+                'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+
+<p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si u mundo t&aacute; muito paradis? Toma um m&eacute; que o mundo vai girarzis! Copo furadis &eacute; disculpa de bebadis, arcu quam euismod magna. T&aacute; deprimidis, eu conhe&ccedil;o uma cachacis que pode alegrar sua vidis.</p>
+
+<p>Viva Forevis aptent taciti sociosqu ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Cevadis im ampola pa arma uma pindureta. Per aumento de cachacis, eu reclamis.</p>
+
+<p>Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. M&eacute; faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga.</p>
+
+<address>&nbsp;</address>
+',
                 "seats_key"=>"",
                 "seats_public_key"=>"",
                 "categoria_id"=>12,
@@ -138,7 +156,16 @@ class EventosSeeder extends Seeder
             [
                 "evento_id"=>1974,
                 "evento_nome"=>"Lightwire Theater: Um natal Eletrizante",
-                'descricao' => 'teste descricao',
+                'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+
+<p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Si u mundo t&aacute; muito paradis? Toma um m&eacute; que o mundo vai girarzis! Copo furadis &eacute; disculpa de bebadis, arcu quam euismod magna. T&aacute; deprimidis, eu conhe&ccedil;o uma cachacis que pode alegrar sua vidis.</p>
+
+<p>Viva Forevis aptent taciti sociosqu ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Cevadis im ampola pa arma uma pindureta. Per aumento de cachacis, eu reclamis.</p>
+
+<p>Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. M&eacute; faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga.</p>
+
+<address>&nbsp;</address>
+',
                 "seats_key"=>"",
                 "seats_public_key"=>"",
                 "categoria_id"=>12,

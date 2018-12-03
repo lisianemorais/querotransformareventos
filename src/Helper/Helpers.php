@@ -15,4 +15,11 @@ class Helpers
         $date = explode(',',$date);
         return $date;
     }
+
+    public static function getHorarioEvento($date)
+    {
+        $objDate = DateTime::createFromFormat('Y-m-d H:i:s', $date);
+        $hora = $objDate->format('H:i');
+        return $hora;
+    }
 }

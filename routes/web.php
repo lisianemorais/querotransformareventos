@@ -12,4 +12,5 @@
 */
 
 Route::get('/evento/{id}', 'EventosController@read');
+Route::get('home', array("as" => "home", "uses" => 'EventosController@index'));
 Route::get('/', 'EventosController@index');

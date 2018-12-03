@@ -1,13 +1,12 @@
 <?php
 include('../src/Helper/Helpers.php');
+setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+date_default_timezone_set('America/Sao_Paulo');
 ?>
 @extends('template')
 
 @section('content')
-    <?php  setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-    date_default_timezone_set('America/Sao_Paulo');
-//    include_once('src\Helper\Helpers.php')
-    ?>
+
     <div class="conteudo">
         <h3 class="titulo-index">Lista de Eventos
             <hr>
@@ -16,8 +15,9 @@ include('../src/Helper/Helpers.php');
             @if( count($eventos) > 0)
                 <div class="lista-eventos well">
                     @foreach($eventos as $evento)
+                        <?php $id = $evento->id?>
                         <div class="card item card-evento">
-                            <a href="">
+                            <a href="{{url('/evento', [$evento->id]) }}">
                                 <span class="container-img">
                                 <img class="card-img-top card-img-evento" src="{{ $evento->imagem_box }}" alt="Imagem Evento">
                                 </span>
@@ -54,7 +54,7 @@ include('../src/Helper/Helpers.php');
                                             </div>
                                             <div class="data-mes double">
                                                 <span><?=$data_primeira_apresentacao[2]?></span>
-                                                <spa><?=$data_ultima_apresentacao[2]?></spa>
+                                                <span><?=$data_ultima_apresentacao[2]?></span>
                                             </div>
                                         <?php } else {?>
                                             <div class="data">
