@@ -18,8 +18,8 @@ class CreateEventoProgramacao extends Migration
             $table->dateTime('data_programacao');
             $table->string('hora_programacao');
             $table->integer('qtd_ingressos');
-            $table->integer('evento_id')->unsigned()->nullable();
-            $table->foreign('evento_id')->references('evento_id')->on('eventos')->onDelete('cascade');
+            $table->integer('evento_id');
+            $table->foreign('evento_id')->references('id')->on('eventos')->onDelete('cascade');
         });
     }
 

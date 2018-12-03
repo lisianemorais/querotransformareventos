@@ -11,6 +11,6 @@ class EventosVendidoSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }

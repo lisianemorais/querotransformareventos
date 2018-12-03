@@ -19,7 +19,7 @@ class CreateEventoVendido extends Migration
             $table->integer('user_id');
             $table->integer('evento_programacao_id')->unsigned();
             $table->foreign('evento_programacao_id')->references('id')->on('evento_programacao')->onDelete('cascade');
-            $table->foreign('evento_id')->references('evento_id')->on('eventos')->onDelete('cascade');
+            $table->foreign('evento_id')->references('id')->on('eventos')->onDelete('cascade');
             $table->timestamps();
         });
     }

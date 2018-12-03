@@ -11,6 +11,7 @@ class EventosModel extends Model
      */
     protected $table = 'eventos';
 
+    protected $primaryKey = 'evento_id';
     /**
      * @var array
      */

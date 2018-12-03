@@ -14,6 +14,7 @@ class EventosSeeder extends Seeder
         DB::table('eventos')->delete();
         DB::table('eventos')->insert([
             [
+                "id" => 1,
                 "evento_id"=>1913,
                 "evento_nome"=>"Evento sem SeatsIO com nome grande para testar a quantidade",
                 "seats_key"=>"",
@@ -55,6 +56,7 @@ class EventosSeeder extends Seeder
             ],
 
             [
+                "id" => 2,
                 "evento_id"=>1943,
                 "evento_nome"=>"Um Natal pelo mundo",
                 'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
@@ -105,6 +107,7 @@ class EventosSeeder extends Seeder
             ],
 
             [
+                "id" => 3,
                 "evento_id"=>1973,
                 "evento_nome"=>"Grande Desfile de Natal",
                 'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
@@ -154,6 +157,7 @@ class EventosSeeder extends Seeder
                 'valor_ingresso' => 15.50
             ],
             [
+                "id" => 4,
                 "evento_id"=>1974,
                 "evento_nome"=>"Lightwire Theater: Um natal Eletrizante",
                 'descricao' => '<p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Quem manda na minha terra sou euzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. N&atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
