@@ -81,7 +81,8 @@ date_default_timezone_set('America/Sao_Paulo');
                 @else
                     <h1>Nenhum Evento cadastrado</h1>
                 @endif
-
         </div>
+        {!! $eventos->links() !!}
     </div>
+
 @stop

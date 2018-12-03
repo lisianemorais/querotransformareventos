@@ -29,7 +29,9 @@
                 <h2 class="titulo-quero-tranformar"> Quero Transformar Eventos</h2>
             </div>
         </header>
+
         @yield('content')
+
         <div class="footer">
             <div>
                 <span>© 2018 - Quero Tranformar Eventos</span>

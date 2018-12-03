@@ -516,3 +516,14 @@ a:hover {
     padding-bottom: 30px;
     text-align: center;
 }
+
+.pagination>.active>span{
+    background-color: #d63785 !important;
+    border-color: #d63785 !important;
+    color: white !important;
+}
+.pagination>li>a, .pagination>li>span{
+    color: #d63785 !important;
+    border: 1px solid #d63785 !important;
+    /*color: #d63785 !important;*/
+}

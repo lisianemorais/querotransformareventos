@@ -7,22 +7,22 @@ use App\EventosModel;
 
 class EventosController extends Controller
 {
-    protected $request;
+    private $eventos;
 
-    public function __construct(Request $request)
+    public function __construct(EventosModel $evento)
     {
-        $this->request = $request;
+        $this->eventos = $evento;
     }
 
     public function index()
     {
-        $eventos = EventosModel::all();
+        $eventos = $this->eventos->paginate(3);
         return View('index', compact('eventos'));
     }
 
     public function read( Request $request, $id )
     {
-        $evento = EventosModel::find($id);
+        $evento = $this->eventos->find($id);
         return View('evento', compact('evento'));
     }
 }
