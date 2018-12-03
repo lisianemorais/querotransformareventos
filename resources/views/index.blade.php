@@ -24,7 +24,6 @@ date_default_timezone_set('America/Sao_Paulo');
                                 <div class="card-body card-info">
                                     <div class="card-data">
                                         <?php
-
                                             //tratamento nome
                                             if( strlen($evento->evento_nome) > 28) {
                                                 $nomeEvento = substr($evento->evento_nome, 0, 28);
@@ -82,6 +81,7 @@ date_default_timezone_set('America/Sao_Paulo');
                     <h1>Nenhum Evento cadastrado</h1>
                 @endif
         </div>
+        {{--paginacao--}}
         {!! $eventos->links() !!}
     </div>
 
