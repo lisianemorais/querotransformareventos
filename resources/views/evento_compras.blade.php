@@ -43,11 +43,11 @@ date_default_timezone_set('America/Sao_Paulo');
                 </div>
                 <div class="qtd-ingresso form-group" >
                     <label for="qtd-ing"> Quantidade: </label>
-                    <input name="qtd-ing" id="qtd-ing" type="number" max="10" class="form-control">
+                    <input name="qtd-ing" id="qtd-ing" type="number" value="1" max="10" onchange="calculaValorIngresso()" class="form-control">
                 </div>
-                <div class="valor-ingresso form-group" >
+                <div class="valor-ingresso form-group " >
                     <label for="vl-ing"> Valor: </label>
-                    <input name="vl-ing" id="qtd-ing"  class="form-control">
+                    <input name="vl-ing" id="vl-ing" disabled class="form-control" value="{{$evento->valor_ingresso}}">
                 </div>
 
                 <div class="btn-finaliza-compra" >
@@ -60,17 +60,33 @@ date_default_timezone_set('America/Sao_Paulo');
 @endsection
 
 <script>
+    let valor_ingresso = <?= $evento->valor_ingresso?>;
 
-    $(document).ready(function() {
-        console.log( "ready!" );
-    });d
+    window.onload = function(){
+        document.getElementById("vl-ing").value = formatMoney(valor_ingresso, 2, ',', '.');
+    }
+
+    function calculaValorIngresso() {
+        let qtd = document.getElementById("qtd-ing").value;
+        document.getElementById("vl-ing").value = formatMoney(valor_ingresso * qtd, 2, ',', '.');
+    }
 
     function getMessage() {
         swal({
-            title: "Parabéns",
             text: "Sua compra está sendo processada, aguarde um momento!",
             icon: "success",
             button: "Ok",
         })
     }
+
+    function formatMoney(n, c, d, t) {
+        var c = isNaN(c = Math.abs(c)) ? 2 : c,
+            d = d == undefined ? "." : d,
+            t = t == undefined ? "," : t,
+            s = n < 0 ? "-" : "",
+            i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+            j = (j = i.length) > 3 ? j % 3 : 0;
+
+        return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+    };
 </script>
