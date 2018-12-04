@@ -553,3 +553,7 @@ a:hover {
     margin-left: 15px;
     margin-bottom: 20px;
 }
+
+.swal-button {
+    background-color: #d63785 !important;
+}

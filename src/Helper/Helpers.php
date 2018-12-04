@@ -16,6 +16,12 @@ class Helpers
         return $date;
     }
 
+    public static function formatDateToBr($date)
+    {
+        $date = new DateTime($date);
+        $date = strftime("%d/%m/%Y", strtotime($date->format('d-m-Y')));
+        return $date;
+    }
     public static function getHorarioEvento($date)
     {
         $objDate = DateTime::createFromFormat('Y-m-d H:i:s', $date);

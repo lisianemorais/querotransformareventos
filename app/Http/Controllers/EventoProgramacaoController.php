@@ -24,7 +24,7 @@ class EventoProgramacaoController extends Controller
 
     public function show(  $idEvento )
     {
-        $eventosProgramacao = $this->eventosProgramacao->find($idEvento);
+        $eventosProgramacao = $this->eventosProgramacao->whereRaw('evento_id = '.$idEvento)->get();
         $evento = EventosModel::find($idEvento);
         return view('evento_compras', compact('evento','eventosProgramacao'));
     }

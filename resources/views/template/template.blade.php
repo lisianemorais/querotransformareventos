@@ -38,7 +38,11 @@
             </div>
         </div>
         <!--global js starts-->
-        <script src="{{ asset('js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/raphael.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/index.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/jquery.circliful.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/livicons-1.4.min.js') }}" type="text/javascript"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>

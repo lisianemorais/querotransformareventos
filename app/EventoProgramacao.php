@@ -12,7 +12,6 @@ class EventoProgramacao extends Model
      */
     protected $table = 'evento_programacao';
 
-    protected $primaryKey = 'evento_id';
     /**
      * @var array
      */
