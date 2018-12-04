@@ -15,7 +15,7 @@ class CreateEventoVendido extends Migration
     {
         Schema::create('evento_vendido', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('evento_id');
+            $table->integer('evento_id')->unsigned()->nullable();
             $table->integer('user_id');
             $table->integer('evento_programacao_id')->unsigned();
             $table->foreign('evento_programacao_id')->references('id')->on('evento_programacao')->onDelete('cascade');

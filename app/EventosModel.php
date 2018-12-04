@@ -11,7 +11,6 @@ class EventosModel extends Model
      */
     protected $table = 'eventos';
 
-    protected $primaryKey = 'evento_id';
     /**
      * @var array
      */
@@ -57,4 +56,8 @@ class EventosModel extends Model
         'valor_ingresso'
     ];
 
+    public function evento_programacao()
+    {
+        return $this->belongsToMany(EventoProgramacao::class);
+    }
 }

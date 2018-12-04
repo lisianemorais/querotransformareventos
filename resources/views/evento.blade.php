@@ -8,7 +8,7 @@
     $hora_apresentacao = !empty($evento->dt_primeira_apresentacao)? Helpers::getHorarioEvento($evento->dt_primeira_apresentacao): '';
 
 ?>
-@extends('template')
+@extends('template.template')
 @section('content')
 <div class="evento-descricao">
     <div class="banner-evento">
@@ -17,7 +17,7 @@
     </div>
     <div class="evento-conteudo limite-pg">
         <div class="btn-comprar-evento">
-            <a href="{{ URL::route('home') }}" class="btn-comprar btn-comprar-js pull-right"> Comprar Ingresso
+            <a href="{{url('/evento/evento_programacao', [$evento->id]) }}" class="btn-comprar btn-comprar-js pull-right"> Comprar Ingresso
             </a>
         </div>
         <div class="row breadcrum">

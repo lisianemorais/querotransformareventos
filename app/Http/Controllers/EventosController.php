@@ -20,7 +20,7 @@ class EventosController extends Controller
         return View('index', compact('eventos'));
     }
 
-    public function read( Request $request, $id )
+    public function read( $id )
     {
         $evento = $this->eventos->find($id);
         return View('evento', compact('evento'));

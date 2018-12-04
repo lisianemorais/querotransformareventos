@@ -527,3 +527,29 @@ a:hover {
     border: 1px solid #d63785 !important;
     /*color: #d63785 !important;*/
 }
+
+.compra-ingresso {
+    overflow: hidden;
+}
+
+.img-compra{
+    width: 100%;
+}
+
+.ingresso h3 {
+    color: #d63785 !important;
+    padding-left: 13px;
+}
+.ingresso hr {
+    width: 26px;
+    height: 4px;
+    background-color: #d63785;
+    border: 0;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}

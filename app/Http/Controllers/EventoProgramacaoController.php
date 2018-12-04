@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\EventosModel;
 use Illuminate\Http\Request;
 use App\EventoProgramacao;
 
@@ -21,9 +22,10 @@ class EventoProgramacaoController extends Controller
         return View('index', compact('eventosProgramacao'));
     }
 
-    public function getProgramacaoByIdEvento( Request $request, $idEvento )
+    public function show(  $idEvento )
     {
-        $eventosProgramacao = $this->eventosProgramacao->where('evento_id', $idEvento);
-//        return View('evento', compact('eventosProgramacao'));
+        $eventosProgramacao = $this->eventosProgramacao->find($idEvento);
+        $evento = EventosModel::find($idEvento);
+        return view('evento_compras', compact('evento','eventosProgramacao'));
     }
 }

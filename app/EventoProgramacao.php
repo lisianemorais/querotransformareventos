@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\EventosModel;
 
 class EventoProgramacao extends Model
 {
@@ -11,6 +12,7 @@ class EventoProgramacao extends Model
      */
     protected $table = 'evento_programacao';
 
+    protected $primaryKey = 'evento_id';
     /**
      * @var array
      */
@@ -20,4 +22,11 @@ class EventoProgramacao extends Model
         'hora_programacao',
         'qtd_ingressos',
     ];
+
+    public function eventos()
+    {
+        $t = $this->belongsTo(EventosModel::class);
+
+        return $t;
+    }
 }
